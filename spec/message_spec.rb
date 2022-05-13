@@ -1,7 +1,12 @@
+require 'rspec'
 require_relative '../main.rb'
 
 describe Main do
-  it message do
-    expect('Welcome to Game of the Life.').to eq('Welcome to Game of the Life.')
+  describe "intro" do
+      it 'return aa after gets height' do 
+          expect(Main.intro) to eq 'aaaa'
+      end
   end
-end
+
+
+
